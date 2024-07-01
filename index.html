@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group1">
+                <input type="text" class="input-field" placeholder="User Id" required autofocus>
+                <input type="password" class="input-field" placeholder="Password" required autofocus>
+                <p>Don't registered yet? <a onclick="register()">Register</a></p>
+                <button type="submit" class="submit-btn">Log In</button>
+            </form>
+            <form id="register" class="input-group2">
+                <input type="text" class="input-field" placeholder="User Id" required autofocus>
+                <input type="email" class="input-field" placeholder="Email Id" required autofocus>
+                <input type="text" class="input-field" placeholder="Contact No." maxlength="10" required autofocus>
+                <input type="date" class="input-field" required autofocus>
+                <input type="password" class="input-field" placeholder="Password" id="password1" required autofocus>
+                <input type="password" class="input-field" placeholder="Confirm Password" id="password2" required autofocus>
+                <p>Already registered? <a onclick="login()">Log In</a></p>
+                <button type="submit" class="submit-btn">Register</button>
+            </form>
+        </div>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
